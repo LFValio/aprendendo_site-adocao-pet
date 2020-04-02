@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,28 +8,85 @@
 .container {
     width: 80%;
     margin: auto;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
     background-color: #dddddd;
-    margin: auto;
 }
 
 a {
     text-decoration: none;
-    color: #414141;
+    color: black;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: 0px 0px 2px black;
+}
+
+.o {
+    visibility: hidden;
+}
+
+.paw {
+    background: url(../images/paw.png) no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 26px;
+    left: 200px;
+}
+
+.dog {}
+
+.logo {
+    background: url(../images/logo-principal2.png) no-repeat;
+    margin-left: 50px;
+}
+
+section#showcase {
+    width: 100%;
+    height: 700px;
+    background: url(../images/showcase.png) center no-repeat;
+    text-align: center;
+    line-height: 50px;
+}
+
+section#showcase h1 {
+    color: rgb(196, 196, 196);
+    text-shadow: 3px 3px 3px black;
+    padding-top: 150px;
+    font-size: 55pt;
+    line-height: 100pt;
+}
+
+section#showcase p {
+    color: #ddd;
+    text-shadow: 3px 3px 3px black;
+    font-size: 30pt;
+    padding-top: 60px;
+}
+
+.legenda {
+    background-color: rgba(0, 0, 0, .4);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.background-imagem {
+    background: url(../images/abandoned_places.jpg);
+    background-position: bottom;
 }
 
 #navbar {
+    position: relative;
     background-color: coral;
-    text-align: center;
+    text-align: right;
     height: 100px;
     border-bottom: 5px solid rgb(91, 255, 255);
 }
 
 #navbar ul {
+    margin-right: 50px;
+    text-transform: uppercase;
     list-style: none;
     line-height: 100px;
 }
@@ -44,8 +103,16 @@ a {
     color: white;
 }
 
-#navbar .logo {
+#navbar h1 {
+    display: none;
+}
+
+#navbar h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
     position: absolute;
-    left: 50px;
-    top: 15px;
+    left: 150px;
+    bottom: 30px;
 }
